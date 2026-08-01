@@ -5,9 +5,13 @@ __pycache__/
 *.pyc
 *.pyo
 
-# 2. Node.js (Untuk React/Next.js nanti)
+# 2. Node.js & Next.js
 node_modules/
 npm-debug.log
+.next/
+out/
+build/
+*.tsbuildinfo
 
 # 3. File Rahasia dan Konfigurasi (WAJIB!)
 .env
@@ -28,3 +32,12 @@ Thumbs.db
 
 # 6. Sampah VS Code
 .vscode/
+
+# 7. Next.js
+.next/
+out/
+
+# Pengecualian: file konfigurasi proyek (karena *.json di atas)
+!package.json
+!package-lock.json
+!jsconfig.json
