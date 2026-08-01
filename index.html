@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Portofolio</a>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="hero-greeting">Halo, saya</p>
+        <h1 class="hero-name">Muhammad Nurrohman</h1>
+        <p class="hero-desc">Web Developer yang sedang belajar membangun halaman web modern.</p>
+        <button id="btn-hubungi" class="btn-primary">Hubungi Saya</button>
+      </div>
+    </section>
+
+    <section id="about" class="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon skill-icon--html">
+            <span>&lt;/&gt;</span>
+          </div>
+          <h3>HTML</h3>
+          <p>Struktur dan semantik halaman web.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-icon--css">
+            <span>#</span>
+          </div>
+          <h3>CSS</h3>
+          <p>Layout, warna, dan desain responsif.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-icon--js">
+            <span>JS</span>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Interaktivitas dan logika di browser.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Hubungi Saya</h2>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Muhammad Nurrohman. Dibuat dengan HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
